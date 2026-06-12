@@ -1,5 +1,18 @@
 [
   {
+    "nombre": "Copa Mundial Qatar 2022",
+    "anio": 2022,
+    "sede": "Qatar",
+    "campeon": "Argentina",
+    "subcampeon": "Francia",
+    "goleador": "Kylian Mbappe",
+    "equipos": 32,
+    "imagen": "qatar-2022.jpg",
+    "slug": "qatar-2022",
+    "resumen": "Argentina campeon tras una final epica ante Francia.",
+    "descripcion": "Primer Mundial en Medio Oriente; Argentina gano en penales su tercer titulo."
+  },
+  {
     "nombre": "Copa Mundial Corea-Japon 2002",
     "anio": 2002,
     "sede": "Corea del Sur y Japon",
@@ -85,22 +98,9 @@
     "subcampeon": "Alemania Federal",
     "goleador": "Paolo Rossi",
     "equipos": 24,
-    "imagen": "espana-1982.svg",
+    "imagen": "espana-1982.jpg",
     "slug": "espana-1982",
     "resumen": "Italia y Paolo Rossi brillaron en la final ante Alemania Federal.",
     "descripcion": "Primer Mundial con 24 equipos; Italia gano 3-1 la final en el Santiago Bernabeu."
-  },
-  {
-    "nombre": "Copa Mundial Argentina 1978",
-    "anio": 1978,
-    "sede": "Argentina",
-    "campeon": "Argentina",
-    "subcampeon": "Paises Bajos",
-    "goleador": "Mario Kempes",
-    "equipos": 16,
-    "imagen": "argentina-1978.svg",
-    "slug": "argentina-1978",
-    "resumen": "Argentina gano su primer titulo en la final ante Paises Bajos.",
-    "descripcion": "Kempes fue la figura del torneo; Argentina gano 3-1 la final en la prorroga."
   }
 ]
