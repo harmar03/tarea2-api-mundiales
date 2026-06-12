@@ -1,6 +1,6 @@
 # Tarea 2 — API REST de la Copa Mundial de la FIFA
 
-API REST construida con **Node.js**, **Express**, **SQLite** (better-sqlite3) y **Zod**.
+API REST construida con **Node.js**, **Express**, **SQLite** (módulo nativo `node:sqlite`) y **Zod**.
 Expone información sobre las ediciones de la Copa Mundial: año, sede, campeón,
 subcampeón, goleador, cantidad de equipos, imagen y descripción.
 
@@ -15,7 +15,7 @@ subcampeón, goleador, cantidad de equipos, imagen y descripción.
 # 1. Instalar dependencias
 npm install
 
-# 2. Poblar la base de datos (crea db/mundiales.db con 8 ediciones)
+# 2. Poblar la base de datos (crea data/mundiales.db con 8 ediciones)
 npm run seed
 
 # 3. Iniciar el servidor (puerto 4321)
@@ -88,16 +88,24 @@ Las capturas de estas pruebas están en la carpeta `docs/capturas/`.
 
 ```
 tarea2/
-├── src/
-│   ├── server.js     # Punto de entrada, levanta el servidor
-│   ├── app.js        # Aplicación Express y rutas
-│   ├── db.js         # Conexión a SQLite
-│   └── schemas.js    # Esquemas de validación con Zod
-├── scripts/
-│   └── seed.js       # Crea y puebla la base de datos
+├── index.js                      # Aplicación Express, rutas y servidor
+├── data.json                     # Datos de las 8 ediciones
+├── data/
+│   ├── CREATE.SQL                # Definición de la tabla
+│   ├── createdb.js               # Crea y puebla la base de datos
+│   ├── mundiales.js              # Repositorio (consultas con node:sqlite)
+│   └── mundiales.db              # Base de datos (generada con npm run seed)
+├── routes/
+│   └── mundiales/                # Un controlador por ruta + su schema de Zod
+│       ├── getAll.js / getAll.schema.js
+│       ├── getBySlug.js / getBySlug.schema.js
+│       ├── getByChampion.js / getByChampion.schema.js
+│       ├── random.js
+│       └── search.js / search.schema.js
 ├── public/
-│   └── imagenes/     # Imágenes de las ediciones (SVG)
-├── db/               # Base de datos SQLite (generada con npm run seed)
+│   └── imagenes/                 # Imágenes de las ediciones (SVG)
+├── docs/
+│   └── capturas/                 # Capturas de las pruebas con xh
 ├── README.md
 └── REFERENCIAS.md
 ```
