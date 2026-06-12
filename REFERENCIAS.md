@@ -4,7 +4,7 @@
 
 - Express — Guía de routing: https://expressjs.com/en/guide/routing.html
 - Express — Servir archivos estáticos: https://expressjs.com/en/starter/static-files.html
-- better-sqlite3 — Documentación del API: https://github.com/WiseLibs/better-sqlite3/blob/master/docs/api.md
+- Node.js — Módulo nativo SQLite (`node:sqlite`): https://nodejs.org/api/sqlite.html
 - Zod — Documentación oficial: https://zod.dev/
 - SQLite — Sentencias SELECT y LIKE: https://www.sqlite.org/lang_select.html
 - MDN — Códigos de estado HTTP: https://developer.mozilla.org/es/docs/Web/HTTP/Status
@@ -23,7 +23,6 @@
 
 ## Notas
 
-- Las imágenes de las ediciones son pósters SVG de elaboración propia
-  (colores de la bandera del país sede, año y campeón).
+- Las imágenes de las ediciones son fotografías reales de cada Copa Mundial.
 - Los textos de resumen y descripción se redactaron a partir de las fuentes
   de Wikipedia y FIFA citadas arriba.
